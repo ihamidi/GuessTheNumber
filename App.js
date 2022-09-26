@@ -1,10 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import  React, {useState, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Guess The Number, press below to start</Text>
+      <button  onClick="Number()">Click me</button>
+      <StatusBar style="auto" />
+    </View>
+  );
+
+
+
+}
+
+function Number() {
+  return (
+    <View style={styles.container}>
+      <Text>Hello, I am your cat!</Text>
       <StatusBar style="auto" />
     </View>
   );
